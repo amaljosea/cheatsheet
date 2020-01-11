@@ -106,7 +106,10 @@ initButtons();
   .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
   .tg .tg-0lax{text-align:left;vertical-align:top}
   .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+  .table-container {width: 100%;overflow: scroll;}
+    
   </style>
+  <div class="table-container">
   <table class="tg">
     <tr>
       <th class="tg-0lax"><span style="font-weight:bold">innerHTML</span></th>
@@ -134,6 +137,7 @@ initButtons();
       <td class="tg-0pky">{i:3}</td>
     </tr>
   </table>
+    </pre>
 
 - The value of `i` is stored in closure
 

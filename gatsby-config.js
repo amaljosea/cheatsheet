@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `CHEATSHEET`,
-    description: `A Blog starter`,
-    author: `Boy with Silver Wings`,
-    authorTagline: 'Engineer. Driven by Passion',
+    description: `A front end developers study notes`,
+    author: `Amal Jose A`,
+    authorTagline: 'Digital experiences ',
     social: {
-      twitter: `agneymenon`,
+      twitter: `howareyouami`,
     },
   },
   plugins: [
