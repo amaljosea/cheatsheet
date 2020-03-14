@@ -11,6 +11,7 @@ const Container = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #5c9c16;
 `;
 
 const Title = styled.h1`
@@ -19,7 +20,7 @@ const Title = styled.h1`
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0;
-
+  color: white;
   ${media.phone`
     text-align: center;
   `}
