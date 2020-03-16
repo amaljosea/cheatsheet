@@ -1,0 +1,40 @@
+{
+  "componentChunkName": "component---src-pages-index-js",
+  "path": "/",
+  "webpackCompilationHash": "2bc1ed5f3eab1eab4e4c",
+  "result": {
+    "data": {
+      "site": { "siteMetadata": { "title": "CHEATSHEET" } },
+      "allMarkdownRemark": {
+        "edges": [
+          {
+            "node": {
+              "id": "efafffb4-cef4-532d-81b6-722b4d7cee0f",
+              "excerpt": "Jest.mock() Jest.mock is the inevitable jest api when unit testing javascript It can be configured to mock module.export, named export, default exports etc How…",
+              "fields": {
+                "slug": "/how-jest-mock-works/",
+                "readingTime": { "text": "1 min read" }
+              },
+              "frontmatter": {
+                "date": "January 11, 2020",
+                "title": "How jest.mock() works"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "4c53e356-9cf1-5939-b352-e3daff9483c3",
+              "excerpt": "Basics Closure = Function + Function’s lexical environment Closure created every time function created To use a closure, define a function inside another…",
+              "fields": {
+                "slug": "/closure/",
+                "readingTime": { "text": "3 min read" }
+              },
+              "frontmatter": { "date": "January 11, 2020", "title": "Closures" }
+            }
+          }
+        ]
+      }
+    },
+    "pageContext": { "isCreatedByStatefulCreatePages": true }
+  }
+}

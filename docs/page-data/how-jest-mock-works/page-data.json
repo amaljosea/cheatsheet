@@ -1,0 +1,31 @@
+{
+  "componentChunkName": "component---src-templates-blog-post-js",
+  "path": "/how-jest-mock-works/",
+  "webpackCompilationHash": "2bc1ed5f3eab1eab4e4c",
+  "result": {
+    "data": {
+      "site": {
+        "siteMetadata": { "title": "CHEATSHEET", "author": "Amal Jose A" }
+      },
+      "markdownRemark": {
+        "id": "efafffb4-cef4-532d-81b6-722b4d7cee0f",
+        "excerpt": "Jest.mock() Jest.mock is the inevitable jest api when unit testing javascript It can be configured to mock module.export, named export…",
+        "html": "<hr>\n<h3>Jest.mock()</h3>\n<ul>\n<li>Jest.mock is the inevitable jest api when unit testing javascript</li>\n<li>It can be configured to mock module.export, named export, default exports etc</li>\n</ul>\n<hr>\n<h3>How jest replaces this</h3>\n<p><a\n    class=\"gatsby-resp-image-link\"\n    href=\"/static/297448dc6645b7c871319002bda2bcdf/678f1/jestMockDiagram.png\"\n    style=\"display: block\"\n    target=\"_blank\"\n    rel=\"noopener\"\n  >\n    <span\n    class=\"gatsby-resp-image-wrapper\"\n    style=\"position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;\"\n  >\n    <span\n      class=\"gatsby-resp-image-background-image\"\n      style=\"padding-bottom: 171.71561051004636%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAiCAYAAABfqvm9AAAACXBIWXMAAAsSAAALEgHS3X78AAACT0lEQVRIx52WCavCMBCE+/9/nSDeB6KoeN/3sY8vMBJj0uoLhLRpMju7s5s0s6A9n0/X9Uy7Xq+23W5tvV678Xa7vX3392SWaFpAO5/PDmixWNhms3EGYutegKEl9fv97tgAsN/vX/1yubh5vn8wDN3zG2wmk4nN53NbrVbW7/dtOp06psztdru4y3p5PB6OjVipMX88Hh0oY2jcf39jeDqdHIPhcOisC5QYwqjVajlhcDklYObHjI3L5dJGo5EdDoeXmgDzDkNiGMbOB81CyliHaSymzON+TEDmHWBoBevEiQVSUiMsY4Y+0iYMMK7DFABihsvMMWKo2+1atVp1oeG5VqtZpVKxer1uGdbDDhuJBKCYiy0eEEu+80zHID0LY+EnNdVBHsJWRn52mQYLQHBPAmHdFyRW/x+iaCEgVEmn07FyuWyDwcCxDfOvMG00snE2m73KC7fJz5BhzP0sdWqwGWACrvilyi33tAEAl4kZSqIy71KU+bDskoAwYWOKseJb6LK/YDweW6PRsGaz6cZSqWTtdtt1kph6/pohLBBBLuIygqhyFIavGfp1rMrQsyrIPw+/cpl61RHPZl1K/nyhy7EFbORwIMF9oLyUeWPod+IHAO4SMyV7rFIKExsgAKkMjiNKD4VRN6+ek4BSmhuu1+u5kRSingHMY/dx2vhq68iSujp9vophquClsl/LeSmTVFkjYFyrqe//YsjhoGvzJ4ah0oCp3HSM/SuG+u3QnNj518FPaaM8VDJzautbUR0nRdGVGP4s6V8nLw//AHlsc/WuxAM4AAAAAElFTkSuQmCC'); background-size: cover; display: block;\"\n    ></span>\n    <img\n        class=\"gatsby-resp-image-image\"\n        style=\"width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;\"\n        alt=\"makeChristmasCard console\"\n        title=\"\"\n        src=\"/static/297448dc6645b7c871319002bda2bcdf/d7711/jestMockDiagram.png\"\n        srcset=\"/static/297448dc6645b7c871319002bda2bcdf/a695b/jestMockDiagram.png 148w,\n/static/297448dc6645b7c871319002bda2bcdf/2f273/jestMockDiagram.png 295w,\n/static/297448dc6645b7c871319002bda2bcdf/d7711/jestMockDiagram.png 590w,\n/static/297448dc6645b7c871319002bda2bcdf/678f1/jestMockDiagram.png 647w\"\n        sizes=\"(max-width: 590px) 100vw, 590px\"\n      />\n  </span>\n  </a></p>\n<h4>Step 1. Making the AST</h4>\n<ul>\n<li>Node will only understand the es5</li>\n<li>For this we need some compiler - here we use babel for converting all these file to es5</li>\n<li>Setting up babel configuration for the test environment will depends upon the project</li>\n</ul>\n<h4>Step 2. Replacing with the mock</h4>\n<ul>\n<li>This is the important step</li>\n<li>Here the AST created in step one is modified</li>\n<li>This is done by the plugin <code class=\"language-text\">babel-plugin-jest-hoist</code></li>\n<li>The mock functions replaces the actual code</li>\n</ul>\n<h4>Step 3. Create code</h4>\n<ul>\n<li>Here according to the new AST code is generated</li>\n</ul>\n<h3>My small babel plugin doing a mocking functionality</h3>\n<style>\n.gist {\n    width:100%;\n    height: 40vh;\n}\n</style>\n<p><a target=\"_blank\" href=\"https://astexplorer.net/#/gist/79fab5c9ec6d83c239b071f37a3f7e8c/bacf48cbaf802d41c73dfd9d9c72d639a4171380\">See in AST explorer</a></p>\n<iframe class=\"gist\" frameborder=\"0\" srcDoc=\"<script src=https://gist.github.com/howareyouami/48f1fb61f6e6f6ea2ce4cf0ad9303f20.js></script>\"></iframe>\n<h3>Reference</h3>\n<ul>\n<li><a href=\"https://github.com/kentcdodds/how-jest-mocking-works\">https://github.com/kentcdodds/how-jest-mocking-works</a></li>\n<li><a href=\"https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\">https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md</a></li>\n</ul>",
+        "fields": { "readingTime": { "text": "1 min read" } },
+        "frontmatter": {
+          "title": "How jest.mock() works",
+          "date": "January 11, 2020"
+        }
+      }
+    },
+    "pageContext": {
+      "isCreatedByStatefulCreatePages": false,
+      "slug": "/how-jest-mock-works/",
+      "previous": {
+        "fields": { "slug": "/closure/" },
+        "frontmatter": { "title": "Closures" }
+      },
+      "next": null
+    }
+  }
+}
