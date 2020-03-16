@@ -8,7 +8,7 @@ import media from '../utils/media';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: system;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'),
@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'system';
+    font-family: 'Roboto';
     margin: 0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -32,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto';
   }
 
   h2 {
@@ -50,6 +50,7 @@ const GlobalStyles = createGlobalStyle`
   code {
     font-family: Menlo,Monaco,"Courier New",Courier,monospace;
     word-break: break-word;
+    font-size: 15px;
   }
 
   pre code {

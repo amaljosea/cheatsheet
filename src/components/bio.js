@@ -38,7 +38,7 @@ const Name = styled.h3`
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-family: 'system';
+  font-family: 'Roboto';
 `;
 
 const TagLine = styled.sub`

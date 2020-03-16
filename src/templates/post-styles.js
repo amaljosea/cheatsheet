@@ -43,7 +43,6 @@ export const Container = styled.article`
     border: 0;
     border-top: 0.1rem solid #ccc;
     display: block;
-    height: 1rem;
     padding: 0;
   }
 `;
