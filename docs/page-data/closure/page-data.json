@@ -1,7 +1,7 @@
 {
   "componentChunkName": "component---src-templates-blog-post-js",
   "path": "/closure/",
-  "webpackCompilationHash": "2bc1ed5f3eab1eab4e4c",
+  "webpackCompilationHash": "5cd3159415788e5e5463",
   "result": {
     "data": {
       "site": {
@@ -18,11 +18,11 @@
     "pageContext": {
       "isCreatedByStatefulCreatePages": false,
       "slug": "/closure/",
-      "previous": null,
-      "next": {
+      "previous": {
         "fields": { "slug": "/how-jest-mock-works/" },
         "frontmatter": { "title": "How jest.mock() works" }
-      }
+      },
+      "next": null
     }
   }
 }
