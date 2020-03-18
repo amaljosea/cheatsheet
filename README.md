@@ -2,7 +2,7 @@
 
 Documenting my learning as a Software Engineer
 
-blog.amaljose.com
+http://blog.amaljose.com/
 
 Made using gatsby
 
