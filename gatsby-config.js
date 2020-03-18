@@ -3,7 +3,7 @@ module.exports = {
     title: `CHEATSHEET`,
     description: `A front end developers study notes`,
     author: `Amal Jose A`,
-    authorTagline: 'Digital experiences ',
+    authorTagline: 'Passionate in creating digital experiences',
     social: {
       twitter: `howareyouami`,
     },
