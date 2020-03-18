@@ -51,7 +51,8 @@ const TagLine = styled.sub`
 const TwitterIcon = styled.img`
   height: 1.5rem;
   width: 1.5rem;
-  padding: 1.5rem 1rem;
+  padding: 2.5rem 0rem;
+  box-sizing: unset;
 `;
 
 const Bio = () => (
